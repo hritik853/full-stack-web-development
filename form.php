@@ -1,16 +1,10 @@
 <?php
 $name=$_POST['name'];
-$email=$_POST['email'];
-$contact=$_POST['contact'];
+$email=$_POST['e-mail'];
+$contact=$_POST['number'];
 $city=$_POST['city'];
 $course=$_POST['course'];
-$intrest=$_POST['intrest'];
-  //echo "name = $name<br>";
-  //echo "email = $email<br>";
-  //echo "contact = $contact<br>";
-  //echo "city = $city<br>";
-  //echo "course = $course<br>";
-  //echo "intrest = $intrest<br>";
+$intrest=$_POST['int2'];
 ?>
 <!DOCTYPE html>
 <html>
@@ -18,10 +12,10 @@ $intrest=$_POST['intrest'];
 	<title>HTML FORM</title>
 </head>
 <body>
-	<form method="post" action="form1.html">
+	<form method="post" action="form.php">
 		name  :<input type="text" name="name" placeholder="type youe name" required ><br>
 		e-mail:<input type="email" name="e-mail" placeholder="type your email" required  ><br>
-		contact no :<input type="number" name="number" placeholder="type your no" maxlength="10" required ><br>
+		contact:<input type="number" name="number" placeholder="type your no" maxlength="10" required ><br>
 		city :<input type="text" name="city" placeholder="enter your city"required ><br>
 		course :<input type="text" name="course" placeholder="enter course"required ><br>
 		intrest <br>
@@ -34,7 +28,7 @@ $intrest=$_POST['intrest'];
 		playing footbal <input type="checkbox" name="int2" value="sports">
 		swimming <input type="checkbox" name="int2" value="sports">
 		singing  <input type="checkbox" name="int2" value="sports">
-		reading<input type="checkbox" name="int2" value="reading">
+		reading<input type="checkbox" name="int2" value="reading"><br>
 		<input type="submit" value="click to submit">
 		 <table border=1px; style=" border-collapse: collapse">
               <tr>
